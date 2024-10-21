@@ -19,26 +19,32 @@
     </header>
     <div class="container">
         
-        <div class="button">
-            <input type = "button" value = "Tour Effeil" id="customButton" />
+        <section class="btn">
+            <input type = "button" value = "Tour Effeil" id="customButton" onclick="afficherTexte('La tour Effeil est un élément emblématique de Paris, construit par Gustave Effeil pour l\'exposition universelle de 1989. Mesurant 330 mètres de hauteur, elle est faite de fer et a été initialement critiquée, mais elle est devenue un symbole mondial de la France et de l\'ingenierie moderne. Elle attire des millions de visiteurs chaques années pour sa vue panoramique sur la ville.')" />
             <input type = "button" value = "Notre-Dame" id="customButton"/>  
             <input type = "button" value = "Arc de Triomphe" id="customButton" />
             <input type = "button" value = "Mont Saint-Michel" id="customButton" />
             <input type = "button" value = "Versaille" id="customButton"/>
-        </div>
+        </section>
 
-        <div id="image container">
+        <section class="image-row">
             <img src="images\tour_eiffel.webp" alt="toureiffel" >
             <img src="images\notre_dame.webp"  alt="notredame" >
             <img src="images\arc_de_triomphe.webp" alt="arc_de_triomphe" >
             <img src="images\mont_saint_michel.webp" alt="mont_saint_michel" >
             <img src="images\versailles.webp" alt="versailles" >
-        </div>
+        </section>
 
-
-
+        <section id="info">
+            <h2 id="title" > Tour Eiffel </h2>
+            <p id="text-content">Paris, France <br> La tour Effeil est un élément emblématique de Paris, construit par Gustave Effeil pour l'exposition universelle de 1989.
+ Mesurant 330 mètres de hauteur, elle est faite de fer et a été initialement critiquée, mais elle est devenue un symbole mondial de la France et de l'ingenierie moderne. 
+ Elle attire des millions de visiteurs chaques années pour sa vue panoramique sur la ville. </p>
+        </section>
 
     </div>
+
+
     <script type="text/javascript" src="script.js"></script>
 </body>
 
