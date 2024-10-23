@@ -51,11 +51,11 @@ svg {
     display: flex;
     align-items: center;
     justify-content: space-around;
-    margin-top: 5%;
+    margin-top: 2%;
 }
 
 .image-row {
-    margin-top: 5%;
+    margin-top: 2%;
     columns : 5;
     column-gap: 0;
 }
