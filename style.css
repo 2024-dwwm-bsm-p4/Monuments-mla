@@ -23,7 +23,7 @@ body {
 
 body {
     line-height: 1.5;
-    font-family: "Outfit", serif;
+    font-family: Jost, sans-serif;
     font-optical-sizing: auto;
     font-style: normal;
     -webkit-font-smoothing: antialiased;
@@ -39,11 +39,12 @@ svg {
 }
 
 
-#customButton {
+.customButton {
     font: inherit;
     background-color: #2d2727;
     color: white;
-    padding: 10px 15px;
+    padding: 5px 10px;
+    border-radius: 5px;
 }
 
 .btn {
@@ -63,12 +64,13 @@ svg {
     border: 1px solid black;
     aspect-ratio: 1/1;
     transition: filter 0.3s ease, transform 0.3s ease;
-    /*filter: grayscale(100%);*/
+    position: relative;
 }
 
 .image-row img:hover {
     filter: none;
     transform: scale(1.1);
+    z-index: 3000;
 }
 
 h1 {
@@ -76,6 +78,21 @@ h1 {
     display: flex;
     align-items: center;
     justify-content: center;
+    margin-top: 15px;
+    font-size: 3rem;
+    padding: 10px;
+}
+
+h2 {
+    animation: fadeIn 5s ease-in-out;
+    font-size: 2rem;
+    padding: 10px;
+}
+
+p {
+    animation: fadeIn 5s ease-in-out;
+    font-size: 1.5rem;
+    padding: 10px;
 }
 
 h3 {
@@ -85,7 +102,9 @@ h3 {
     align-items: center;
     justify-content: center;
     margin-top: 15px;
+    font-size: 1.5rem;
 }
+
 button {
     background-color: unset;
     border: unset;
@@ -93,11 +112,11 @@ button {
 
 #info {
     text-align: left;
-    margin-top: 3%;
+    margin-top: 20px;
     background-color: #2d2727;
     color: white;
     min-height: 250px;
-    animation: fadeIn 5s ease-in-out;
+    padding: 10px;
 } 
 
 @keyframes fadeIn {
@@ -129,5 +148,7 @@ a {
 
 .description {
     text-align: left;
+    animation: fadeIn 5s ease-in-out;
+
 }
 
